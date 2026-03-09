@@ -9,7 +9,7 @@ I am Adrian, an enthusiastic Software Developer and Firebird RDBMS contributor f
 - 💻 C++            ([flamerobin](https://github.com/mariuz/flamerobin))
 - 🐘 PHP            ([firebirdwebadmin](https://github.com/mariuz/firebirdwebadmin))
 - 🐍 Python         ([pyfirebirdsql](https://github.com/mariuz/pyfirebirdsql))
-- 🐹 Go             ([go-firebird](https://github.com/mariuz/go-firebird))
+- 🐹 Go             ([go firebird](https://github.com/mariuz/firebirdsql))
 - 🚀 TypeScript     ([vscode-firebird](https://github.com/mariuz/vscode-firebird))
 - 🌐 JavaScript     ([node-firebird](https://github.com/mariuz/node-firebird))
 - 💎 Ruby           ([fb](https://github.com/mariuz/fb))
