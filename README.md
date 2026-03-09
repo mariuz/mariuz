@@ -54,14 +54,8 @@ I am Adrian, an enthusiastic Software Developer and Firebird RDBMS contributor f
 
 ### 📫 How to reach me
 
-- Visit my [Blog](https://flamerobin.blogspot.com) 🌐
-- Connect with me on [LinkedIn](https://www.linkedin.com/in/adrianpopa/) 👤
-- Write me an [Email](mailto:popa.marius.adrian@gmail.com) ✉️
+- Visit my [Blog](https://mapopa.blogspot.com) 🌐
+- Connect with me on [LinkedIn](https://www.linkedin.com/in/mariuz/) 👤
 
-### 📊 GitHub Stats
 
-[![Adrian's GitHub stats](https://github-readme-stats.vercel.app/api?username=mariuz)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mariuz&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
-
-[![👀](https://api.visitorbadge.io/api/visitors?path=mariuz&label=👀&labelColor=%231f1e34&countColor=%231f1e34&style=flat-square&labelStyle=upper)](https://visitorbadge.io/status?path=mariuz)
