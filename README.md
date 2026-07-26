@@ -81,13 +81,6 @@ Drivers and clients I've built with, maintain, or contribute large portions to:
 
 ---
 
-### 📊 GitHub Stats
-
-[![Adrian's GitHub stats](https://github-readme-stats.vercel.app/api?username=mariuz&show_icons=true&theme=react)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mariuz&langs_count=8&layout=compact&theme=react)](https://github.com/anuraghazra/github-readme-stats)
-
----
-
 ### 📫 How to reach me
 
 - 🌐 Website — [reea.net](https://reea.net)
