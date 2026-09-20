@@ -1,90 +1,87 @@
 ### Hi there 👋
 
-I am **Adrian (Popa Marius Adrian)**, an enthusiastic Software Developer and long‑time **Firebird RDBMS** contributor from Romania 🇷🇴.
+I am **Adrian (Popa Marius Adrian)** — a software developer from Romania 🇷🇴 and a long‑time **Firebird RDBMS** contributor ([@FirebirdSQL](https://github.com/FirebirdSQL) member, 40+ PRs across the org).
 
-I build and maintain open‑source tooling around the Firebird database — desktop admin tools, web frontends, drivers for just about every language, and the containers and CI that ship them. Lately I'm especially interested in where **databases meet AI**: vector/embedding search, and connecting database tools to LLMs through the **Model Context Protocol (MCP)**.
+I build and maintain open‑source tooling around Firebird: the desktop admin GUI, export/copy utilities, a web frontend, drivers, and the CI and containers that ship them. Lately I've been pushing Firebird into places it hasn't been before — **the browser (WASM)**, **Kubernetes**, **vector search**, **Rust**, and **LLM assistants over MCP**.
 
-- 🔭 Maintaining [**FlameRobin**](https://github.com/mariuz/flamerobin) — the cross‑platform Firebird admin tool (C++20)
-- 🌱 Exploring AI‑assisted database tooling: **vector search**, embeddings, and **MCP** servers for LLM assistants
-- 🐘 Keeping the Firebird driver ecosystem (PHP, Python, Go, Node/TypeScript, Perl, Ruby, Rust) healthy
-- 🐳 Packaging Firebird for **Docker** and automating builds with GitHub Actions / GitLab CI
-- 💬 Ask me about **Firebird**, SQL, database internals, or C++
-- 🌐 Web: [reea.net](https://reea.net) · ✍️ Blog: [mapopa.blogspot.com](https://mapopa.blogspot.com)
+- 🔭 Maintaining [**FlameRobin**](https://github.com/mariuz/flamerobin) — the cross‑platform Firebird admin tool, shipping releases roughly monthly
+- 🧪 Building [**fbvector**](https://github.com/mariuz/fbvector) (pgvector‑style similarity search for Firebird) and [**electric‑firebird**](https://github.com/mariuz/electric-firebird) (Firebird embedded in WASM)
+- 🦀 Experimenting with [**fire‑crab**](https://github.com/mariuz/fire-crab) — incremental C++→Rust conversion of the Firebird engine, differential‑tested against the real one
+- 💬 Ask me about **Firebird**, SQL, database internals, C++, or FreePascal
+- 🌐 [reea.net](https://reea.net) · ✍️ [mapopa.blogspot.com](https://mapopa.blogspot.com)
 
 ---
 
-### ⭐ Featured Projects
+### 🔥 FlameRobin
 
-| Project | Description | Tech |
+[![Latest release](https://img.shields.io/github/v/release/mariuz/flamerobin?label=release&color=1f1e34)](https://github.com/mariuz/flamerobin/releases)
+[![Stars](https://img.shields.io/github/stars/mariuz/flamerobin?color=1f1e34)](https://github.com/mariuz/flamerobin/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/mariuz/flamerobin?color=1f1e34)](https://github.com/mariuz/flamerobin/commits/master)
+
+A lightweight, cross‑platform admin & development GUI for Firebird 2.5 → 6.0+, written in modern C++ with wxWidgets. Beyond the classics (metadata browser, data grid, DDL editor), it now does JSON field editing, temporal tables, query‑plan visualization, a **vector data editor**, and an embedded **MCP server** so AI assistants can talk to your database directly. → [**flamerobin.org**](http://flamerobin.org)
+
+---
+
+### ⭐ Selected projects
+
+**Tools**
+
+| Project | What it is | Tech |
 | --- | --- | --- |
-| [**flamerobin**](https://github.com/mariuz/flamerobin) | Lightweight, cross‑platform admin & dev GUI for Firebird (2.5 → 6.0+). Modern C++20 with JSON field editing, temporal tables, query‑plan visualization, plus **vector/AI embedding** support and an embedded **MCP server** for AI assistants. | C++ |
-| [**firebirdwebadmin**](https://github.com/mariuz/firebirdwebadmin) | PHP web frontend to administer Firebird SQL servers from the browser. | PHP |
-| [**perl-dbd-firebird**](https://github.com/mariuz/perl-dbd-firebird) | The Perl DBI driver (`DBD::Firebird`) for connecting Perl apps to Firebird. | Perl |
-| [**firebird-docker**](https://github.com/mariuz/firebird-docker) | Docker images for Firebird — multi‑version, auto‑restore from backup, health checks. | Docker / Shell |
-| [**php-firebird**](https://github.com/mariuz/php-firebird) | The Firebird/InterBase PDO & interbase extension for modern PHP. | C |
+| [**flamerobin**](https://github.com/mariuz/flamerobin) | Cross‑platform admin & dev GUI for Firebird. Vector editor + built‑in MCP server. | C++ / wxWidgets |
+| [**fbexport**](https://github.com/mariuz/fbexport) | Import/export data and run SQL scripts; FBCopy copies and compares data across databases. | C++ |
+| [**gmarathon‑freepascal**](https://github.com/mariuz/gmarathon-freepascal) | The Marathon SQL IDE, ported from Delphi to Lazarus/FreePascal. | FreePascal |
+| [**firebirdwebadmin**](https://github.com/mariuz/firebirdwebadmin) | Administer a Firebird server from the browser. | PHP |
+| [**perl-dbd-firebird**](https://github.com/mariuz/perl-dbd-firebird) | `DBD::Firebird` — the Perl DBI driver. | Perl / XS |
+
+**Firebird, in new places**
+
+| Project | What it is | Tech |
+| --- | --- | --- |
+| [**fbvector**](https://github.com/mariuz/fbvector) | Vector storage and similarity search as a Firebird UDR — L2, cosine, inner product, L1 — SIMD‑accelerated with Google Highway. Think `pgvector`, for Firebird. | C++ |
+| [**electric‑firebird**](https://github.com/mariuz/electric-firebird) | The real engine compiled to WASM, running in the browser with no server. PGlite‑style async API. → [**live demo**](https://mariuz.github.io/electric-firebird/) | TypeScript / WASM |
+| [**cloudnative‑firebird**](https://github.com/mariuz/cloudnative-firebird) | Kubernetes operator with a `FirebirdCluster` CRD, in the spirit of cloudnative‑pg. | TypeScript |
+| [**fire‑crab**](https://github.com/mariuz/fire-crab) 🔥🦀 | Incremental C++→Rust conversion of the engine, bottom‑up from the storage layer, differential‑tested against upstream from the first commit. | Rust |
+
+**Explaining the database**
+
+| Project | What it is |
+| --- | --- |
+| [**FBSimCity**](https://github.com/mariuz/FBSimCity) | An explorable isometric city that shows how Firebird actually works — Y‑valve, DSQL, page cache, latency. → [**live demo**](https://mariuz.github.io/FBSimCity/) |
+| [**conceptual‑architecture‑for‑firebird‑paper**](https://github.com/mariuz/conceptual-architecture-for-firebird-paper) | The Waterloo conceptual‑architecture paper on Firebird, updated and re‑diagrammed. |
 
 ---
 
-### 🧩 Firebird driver ecosystem
+### 🧩 Talking to Firebird from your language
 
-Drivers and clients I've built with, maintain, or contribute large portions to:
+The upstream drivers I use, package, test against, or send patches to:
 
-- 💻 C++ &nbsp;&nbsp;&nbsp;→ [flamerobin](https://github.com/mariuz/flamerobin)
-- 🐘 PHP &nbsp;&nbsp;&nbsp;→ [firebirdwebadmin](https://github.com/mariuz/firebirdwebadmin) · [php-firebird](https://github.com/mariuz/php-firebird)
-- 🐍 Python &nbsp;→ [pyfirebirdsql](https://github.com/mariuz/pyfirebirdsql)
-- 🐹 Go &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ [firebirdsql](https://github.com/mariuz/firebirdsql)
-- 🚀 TypeScript → [node-firebird-driver](https://github.com/mariuz/node-firebird-driver)
-- 🌐 JavaScript → [node-firebird](https://github.com/mariuz/node-firebird)
-- 💎 Ruby &nbsp;&nbsp;&nbsp;→ [fb](https://github.com/mariuz/fb)
-- 🐪 Perl &nbsp;&nbsp;&nbsp;→ [perl-dbd-firebird](https://github.com/mariuz/perl-dbd-firebird)
-- 🦀 Rust &nbsp;&nbsp;&nbsp;→ [r2d2](https://github.com/mariuz/r2d2) (connection pooling)
-- 💾 Shell &nbsp;&nbsp;→ [firebird-docker](https://github.com/mariuz/firebird-docker)
+| Language | Driver | Notes |
+| --- | --- | --- |
+| 🐘 PHP | [FirebirdSQL/php-firebird](https://github.com/FirebirdSQL/php-firebird) | PDO + `interbase` extension |
+| 🐍 Python | [FirebirdSQL/python3-driver](https://github.com/FirebirdSQL/python3-driver) · [nakagami/pyfirebirdsql](https://github.com/nakagami/pyfirebirdsql) | official & pure‑Python |
+| 🐹 Go | [nakagami/firebirdsql](https://github.com/nakagami/firebirdsql) | `database/sql` driver |
+| 🌐 Node | [hgourvest/node-firebird](https://github.com/hgourvest/node-firebird) · [asfernandes/node-firebird-driver](https://github.com/asfernandes/node-firebird-driver) | pure JS & TypeScript |
+| 🐪 Perl | [**mariuz/perl-dbd-firebird**](https://github.com/mariuz/perl-dbd-firebird) | maintained here |
+| 💎 Ruby | [rowland/fb](https://github.com/rowland/fb) | extension library |
+| 🦀 Rust | [fernandobatels/rsfbclient](https://github.com/fernandobatels/rsfbclient) | native & embedded |
+| ☕ Java | [FirebirdSQL/jaybird](https://github.com/FirebirdSQL/jaybird) | JDBC |
+| 🟣 .NET | [FirebirdSQL/NETProvider](https://github.com/FirebirdSQL/NETProvider) | ADO.NET / EF Core |
+| 🐳 Docker | [FirebirdSQL/firebird-docker](https://github.com/FirebirdSQL/firebird-docker) | official images |
 
 ---
 
 ### 🔮 Stack
 
-#### Languages
-
-![C++](https://img.shields.io/static/v1?message=C%2B%2B&logo=cplusplus&style=for-the-badge&color=1f1e34&label=%20)
-![PHP](https://img.shields.io/static/v1?message=PHP&logo=php&style=for-the-badge&color=1f1e34&label=%20)
-![Python](https://img.shields.io/static/v1?message=Python&logo=python&style=for-the-badge&color=1f1e34&label=%20)
-![Go](https://img.shields.io/static/v1?message=Go&logo=go&style=for-the-badge&color=1f1e34&label=%20)
-![Rust](https://img.shields.io/static/v1?message=Rust&logo=rust&style=for-the-badge&color=1f1e34&label=%20)
-![Ruby](https://img.shields.io/static/v1?message=Ruby&logo=ruby&style=for-the-badge&color=1f1e34&label=%20)
-![TypeScript](https://img.shields.io/static/v1?message=TypeScript&logo=typescript&style=for-the-badge&color=1f1e34&label=%20)
-![JavaScript](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&style=for-the-badge&color=1f1e34&label=%20)
-
-#### Databases & Data
-
-![Firebird](https://img.shields.io/static/v1?message=Firebird&logo=firebird&style=for-the-badge&color=1f1e34&label=%20)
-![SQLite](https://img.shields.io/static/v1?message=SQLite&logo=sqlite&style=for-the-badge&color=1f1e34&label=%20)
-![PostgreSQL](https://img.shields.io/static/v1?message=PostgreSQL&logo=postgresql&style=for-the-badge&color=1f1e34&label=%20)
-
-#### AI / Modern tooling
-
-![Model Context Protocol](https://img.shields.io/static/v1?message=MCP&logo=modelcontextprotocol&style=for-the-badge&color=1f1e34&label=%20)
-![Embeddings & Vector Search](https://img.shields.io/static/v1?message=Embeddings%20%26%20Vector%20Search&logo=openai&style=for-the-badge&color=1f1e34&label=%20)
-
-#### CI/CD, VCS & Containers
-
-![Github Actions](https://img.shields.io/static/v1?message=Github%20Actions&logo=github-actions&style=for-the-badge&color=1f1e34&label=%20)
-![GitLab CI](https://img.shields.io/static/v1?message=GitLab%20CI&logo=gitlab&style=for-the-badge&color=1f1e34&label=%20)
-![Git](https://img.shields.io/static/v1?message=Git&logo=git&style=for-the-badge&color=1f1e34&label=%20)
-![Docker](https://img.shields.io/static/v1?message=Docker&logo=docker&style=for-the-badge&color=1f1e34&label=%20)
-![Bash](https://img.shields.io/static/v1?message=Bash&logo=gnu-bash&style=for-the-badge&color=1f1e34&label=%20)
-
-#### Testing & Code quality
-
-![Eslint](https://img.shields.io/static/v1?message=Eslint&logo=eslint&style=for-the-badge&color=1f1e34&label=%20)
-![SonarQube](https://img.shields.io/static/v1?message=SonarQube&logo=sonarqube&style=for-the-badge&color=1f1e34&label=%20)
+- **Languages** — C++ · FreePascal · PHP · Python · TypeScript · Go · Rust · Perl · Shell
+- **Data** — Firebird · SQLite · PostgreSQL · vector search & embeddings
+- **AI** — Model Context Protocol (MCP) · LLM‑assisted database tooling
+- **Build & ship** — GitHub Actions · GitLab CI · Docker · CMake · Meson · wxWidgets
 
 ---
 
-### 📫 How to reach me
+### 📫 Elsewhere
 
-- 🌐 Website — [reea.net](https://reea.net)
-- ✍️ Blog — [mapopa.blogspot.com](https://mapopa.blogspot.com)
-- 👤 LinkedIn — [in/mariuz](https://www.linkedin.com/in/mariuz/)
-- ✉️ Email — [mapopa@gmail.com](mailto:mapopa@gmail.com)
-- ❤️ Sponsor — [GitHub Sponsors](https://github.com/sponsors/mariuz)
+[🌐 reea.net](https://reea.net) · [✍️ Blog](https://mapopa.blogspot.com) · [👤 LinkedIn](https://www.linkedin.com/in/mariuz/) · [🐘 Mastodon](https://mastodon.social/@mariuz) · [🦋 Bluesky](https://bsky.app/profile/mapopa.bsky.social) · [🧵 Threads](https://www.threads.com/@popa_adrian_marius) · [✉️ Email](mailto:mapopa@gmail.com)
+
+❤️ If FlameRobin or any of this is useful to you, consider [sponsoring](https://github.com/sponsors/mariuz).
