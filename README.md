@@ -42,7 +42,7 @@ A lightweight, cross‑platform admin & development GUI for Firebird 2.5 → 6.0
 | --- | --- | --- |
 | [**fbvector**](https://github.com/mariuz/fbvector) | Vector storage and similarity search as a Firebird UDR — L2, cosine, inner product, L1 — SIMD‑accelerated with Google Highway. Think `pgvector`, for Firebird. | C++ |
 | [**electric‑firebird**](https://github.com/mariuz/electric-firebird) | The real engine compiled to WASM, running in the browser with no server. PGlite‑style async API. → [**live demo**](https://mariuz.github.io/electric-firebird/) | TypeScript / WASM |
-| [**cloudnative‑firebird**](https://github.com/mariuz/cloudnative-firebird) | Kubernetes operator with a `FirebirdCluster` CRD, in the spirit of cloudnative‑pg. | TypeScript |
+| [**cloudnative‑firebird**](https://github.com/mariuz/cloudnative-firebird) | Kubernetes operator with a `FirebirdCluster` CRD, in the spirit of cloudnative‑pg. → [**announcement**](https://mapopa.blogspot.com/2026/10/introducing-fbadmin-and-cloudnative.html) | TypeScript |
 | [**FirebirdREST**](https://github.com/mariuz/firebirdrest) | Serve a RESTful API from any Firebird database. → [**docs**](https://mariuz.github.io/firebirdrest/) | REST |
 | [**firebirdrest‑js**](https://github.com/mariuz/firebirdrest-js) | The supabase‑js query API (`from()`, `select()`, filters, `rpc()`, upserts) for FirebirdREST. | JavaScript |
 | [**fire‑crab**](https://github.com/mariuz/fire-crab) 🔥🦀 | Incremental C++→Rust conversion of the engine, bottom‑up from the storage layer, differential‑tested against upstream from the first commit. | Rust |
@@ -76,13 +76,15 @@ Classic shooters simulated and rendered **inside Firebird 6 compiled to WebAssem
 
 ### 📣 Latest announcements
 
+- 2026‑10‑30 · [fb-cpp 1.0.0: a feature-complete modern C++ wrapper for Firebird](https://mapopa.blogspot.com/2026/10/fb-cpp-100-feature-complete-modern-c.html)
+- 2026‑10‑27 · [Introducing fbadmin and cloudnative-firebird: a web admin tool and a Kubernetes operator for Firebird](https://mapopa.blogspot.com/2026/10/introducing-fbadmin-and-cloudnative.html)
+- 2026‑10‑27 · [Electric Firebird / firebird-wasm: six releases in four days (v0.10.0 to v0.14.0)](https://mapopa.blogspot.com/2026/10/electric-firebird-firebird-wasm-six.html)
 - 2026‑10‑21 · [Firebird can now be built with CMake + Clang on Windows, Linux and macOS](https://mapopa.blogspot.com/2026/10/firebird-can-now-be-built-with-cmake.html)
 - 2026‑08‑15 · [FBSimCity v0.9.0: the machine room, with the real Firebird engine inside the city](https://mapopa.blogspot.com/2026/08/fbsimcity-v090-machine-room-real.html)
 - 2026‑08‑09 · [Electric Firebird: the Firebird engine compiled to WebAssembly, with a live demo](https://mapopa.blogspot.com/2026/08/electric-firebird-firebird-database.html)
 - 2026‑08‑04 · [Firebird adds an optional static fbclient](https://mapopa.blogspot.com/2026/08/firebird-adds-optional-static-fbclient.html)
-- 2026‑07‑31 · [node-firebird catches up: roadmap complete, issue tracker at zero](https://mapopa.blogspot.com/2026/07/node-firebird-catches-up-roadmap.html)
-- 2026‑07‑31 · [cl-firebird v1.0.0: a pure Common Lisp driver for Firebird](https://mapopa.blogspot.com/2026/07/announcing-cl-firebird-v100-pure-common.html)
-- 2026‑07‑13 · [node-firebird v2.6.0: TypeScript 7, query cancellation, Firebird 6.0 support](https://mapopa.blogspot.com/2026/07/announcing-node-firebird-v260.html)
+
+**Latest releases:** [FlameRobin v26.10.1](https://github.com/mariuz/flamerobin/releases) · [electric‑firebird v0.14.0](https://github.com/mariuz/electric-firebird/releases) · [FBSimCity v0.12.0](https://github.com/mariuz/FBSimCity/releases) · [fbadmin v2.1.1](https://github.com/mariuz/fbadmin/releases) · [FirebirdREST v0.7.0](https://github.com/mariuz/firebirdrest/releases) · [cloudnative‑firebird v0.145.0](https://github.com/mariuz/cloudnative-firebird/releases)
 
 → [All posts](https://mapopa.blogspot.com) · [mariuz.github.io](https://mariuz.github.io/)
 
