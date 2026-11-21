@@ -58,7 +58,7 @@ A lightweight, cross‑platform admin & development GUI for Firebird 2.5 → 6.0
 
 ### 🎮 Games, rendered by a database
 
-Classic shooters simulated and rendered **inside Firebird 6 compiled to WebAssembly**, plus engine ports. All run in the browser:
+Classic shooters simulated and rendered **inside Firebird 6 compiled to WebAssembly**, plus engine ports and a game‑jam entry:
 
 | Game | Running on | Play |
 | --- | --- | --- |
@@ -71,20 +71,21 @@ Classic shooters simulated and rendered **inside Firebird 6 compiled to WebAssem
 | [**castle-quake2**](https://github.com/mariuz/castle-quake2) | Castle Game Engine (Object Pascal) | [▶ play](https://mariuz.github.io/castle-quake2/) |
 | [**castle-doom3**](https://github.com/mariuz/castle-doom3) | Castle Game Engine (Object Pascal) | desktop |
 | [**unreal-doom**](https://github.com/mariuz/unreal-doom) | Unreal Engine 5.8 (C++), Lumen, co‑op & deathmatch | desktop |
+| [**HypeCubeJam**](https://github.com/mariuz/HypeCubeJam) 🆕 | Unreal Engine 5.9 (C++), multiplayer space shooter in a 4‑D hypercube, made for the 2026 Epic AI MegaJam | [▶ browser (WebGPU, experimental)](https://mariuz.github.io/HypeCubeJam/) · [itch.io](https://mariuz.itch.io/hypecubejam) · [trailer](https://youtu.be/iwO5n33EsUc) |
 
 ---
 
 ### 📣 Latest announcements
 
+- 2026‑11‑14 · 🆕 [**HypeCubeJam**](https://github.com/mariuz/HypeCubeJam): a multiplayer space shooter in a 4‑D hypercube of sectors, made in Unreal Engine 5.9 for the 2026 Epic AI MegaJam. [Play on itch.io](https://mariuz.itch.io/hypecubejam) · [trailer](https://youtu.be/iwO5n33EsUc)
 - 2026‑10‑30 · [fb-cpp 1.0.0: a feature-complete modern C++ wrapper for Firebird](https://mapopa.blogspot.com/2026/10/fb-cpp-100-feature-complete-modern-c.html)
 - 2026‑10‑27 · [Introducing fbadmin and cloudnative-firebird: a web admin tool and a Kubernetes operator for Firebird](https://mapopa.blogspot.com/2026/10/introducing-fbadmin-and-cloudnative.html)
 - 2026‑10‑27 · [Electric Firebird / firebird-wasm: six releases in four days (v0.10.0 to v0.14.0)](https://mapopa.blogspot.com/2026/10/electric-firebird-firebird-wasm-six.html)
 - 2026‑10‑21 · [Firebird can now be built with CMake + Clang on Windows, Linux and macOS](https://mapopa.blogspot.com/2026/10/firebird-can-now-be-built-with-cmake.html)
 - 2026‑08‑15 · [FBSimCity v0.9.0: the machine room, with the real Firebird engine inside the city](https://mapopa.blogspot.com/2026/08/fbsimcity-v090-machine-room-real.html)
 - 2026‑08‑09 · [Electric Firebird: the Firebird engine compiled to WebAssembly, with a live demo](https://mapopa.blogspot.com/2026/08/electric-firebird-firebird-database.html)
-- 2026‑08‑04 · [Firebird adds an optional static fbclient](https://mapopa.blogspot.com/2026/08/firebird-adds-optional-static-fbclient.html)
 
-**Latest releases:** [FlameRobin v26.10.1](https://github.com/mariuz/flamerobin/releases) · [electric‑firebird v0.14.0](https://github.com/mariuz/electric-firebird/releases) · [FBSimCity v0.12.0](https://github.com/mariuz/FBSimCity/releases) · [fbadmin v2.1.1](https://github.com/mariuz/fbadmin/releases) · [FirebirdREST v0.7.0](https://github.com/mariuz/firebirdrest/releases) · [cloudnative‑firebird v0.145.0](https://github.com/mariuz/cloudnative-firebird/releases)
+**Latest releases:** [FlameRobin v26.11.5](https://github.com/mariuz/flamerobin/releases) · [cloudnative‑firebird v0.180.0](https://github.com/mariuz/cloudnative-firebird/releases) · [FirebirdREST v0.11.0](https://github.com/mariuz/firebirdrest/releases) · [electric‑firebird v0.20.3](https://github.com/mariuz/electric-firebird/releases) · [castle‑doom v0.62.0](https://github.com/mariuz/castle-doom/releases) · [FBSimCity v0.13.0](https://github.com/mariuz/FBSimCity/releases) · [fbadmin v2.1.1](https://github.com/mariuz/fbadmin/releases)
 
 → [All posts](https://mapopa.blogspot.com) · [mariuz.github.io](https://mariuz.github.io/)
 
@@ -114,7 +115,7 @@ The upstream drivers I use, package, test against, or send patches to:
 - **Languages** — C++ · FreePascal · PHP · Python · TypeScript · Go · Rust · Perl · Shell
 - **Data** — Firebird · SQLite · PostgreSQL · vector search & embeddings
 - **AI** — Model Context Protocol (MCP) · LLM‑assisted database tooling
-- **Games & graphics** — WebAssembly · Castle Game Engine · Unreal Engine 5
+- **Games & graphics** — WebAssembly · WebGPU · Castle Game Engine · Unreal Engine 5
 - **Build & ship** — GitHub Actions · GitLab CI · Docker · CMake · Meson · wxWidgets
 
 ---
